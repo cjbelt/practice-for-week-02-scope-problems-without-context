@@ -26,6 +26,15 @@ Example 3:
 ***********************************************************************/
 function coinCollector(numCoins) {
   // Your code here
+  let arr = [];
+
+  return function(coin) {
+    if (arr.length < numCoins) {
+      arr.push(coin);
+    }
+
+    return arr;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

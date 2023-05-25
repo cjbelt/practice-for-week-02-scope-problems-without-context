@@ -12,6 +12,11 @@ arrowRestSum(0); // => 0
 
 const arrowRestSum = (...otherNums) => {
   // Your code here
+  let sum = otherNums.reduce(function (accum, num) {
+    return accum + num;
+  })
+
+  return sum;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
